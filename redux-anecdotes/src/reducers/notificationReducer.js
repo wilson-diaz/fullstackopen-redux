@@ -2,7 +2,7 @@ const initialState = 'Welcome to the anecdotes app!'
 
 const notificationReducer = (state = initialState, action) => {
   switch(action.type) {
-    case 'SEND_NEW': {
+    case 'SET_NEW': {
       return action.data
     }
     case 'CLEAR':
@@ -11,10 +11,15 @@ const notificationReducer = (state = initialState, action) => {
   }
 }
 
-export const sendNewNotification = (notification) => {
-  return {
-    type: 'SEND_NEW',
-    data: notification
+export const setNotification = (message, seconds) => {
+  return async dispatch => {
+    dispatch({
+      type: 'SET_NEW',
+      data: message
+    })
+    return setTimeout(() => {
+      dispatch(clearNotification())
+    }, (seconds * 1000))
   }
 }
 
