@@ -46,10 +46,10 @@ export const addVote = (id) => {
   }
 }
 
-export const addNew = (content) => {
+export const addNew = (data) => {
   return {
     type: 'ADD_NEW',
-    data: asObject(content)
+    data
   }
 }
 
