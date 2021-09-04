@@ -39,6 +39,11 @@
       "content": "new note test",
       "votes": 0,
       "id": "A9frAyb"
+    },
+    {
+      "content": "another test",
+      "votes": 0,
+      "id": "R-lssfb"
     }
   ]
 }
