@@ -5,14 +5,22 @@ const notificationReducer = (state = initialState, action) => {
     case 'SEND_NEW': {
       return action.data
     }
+    case 'CLEAR':
+      return null
     default: return state
   }
 }
 
-const sendNewNotification = (notification) => {
+export const sendNewNotification = (notification) => {
   return {
     type: 'SEND_NEW',
     data: notification
+  }
+}
+
+export const clearNotification = () => {
+  return {
+    type: 'CLEAR'
   }
 }
 
