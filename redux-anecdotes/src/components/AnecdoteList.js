@@ -4,16 +4,17 @@ import { sendNewNotification, clearNotification } from '../reducers/notification
 
 const AnecdoteList = () => {
   const dispatch = useDispatch()
-  const anecdotes = useSelector(state => state.anecdotes)
+  const state = useSelector(state => state)
 
   const vote = (id) => {
     dispatch(addVote(id))
-    dispatch(sendNewNotification(`You voted for '${anecdotes.find(anec => id === anec.id).content}'`))
+    dispatch(sendNewNotification(`You voted for '${state.anecdotes.find(anec => id === anec.id).content}'`))
     setTimeout(() => dispatch(clearNotification()), 5000)
   }
 
   return (
-    anecdotes
+    state.anecdotes
+      .filter(anec => anec.content.toLowerCase().indexOf(state.anecFilter.toLowerCase()) !== -1)
       .sort((a, b) => b.votes - a.votes)
       .map(anecdote =>
         <div key={anecdote.id}>
