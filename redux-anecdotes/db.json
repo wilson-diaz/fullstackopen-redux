@@ -3,12 +3,12 @@
     {
       "content": "If it hurts, do it more often",
       "id": "47145",
-      "votes": 9
+      "votes": 10
     },
     {
       "content": "Adding manpower to a late software project makes it later!",
       "id": "21149",
-      "votes": 18
+      "votes": 20
     },
     {
       "content": "The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.",
@@ -32,7 +32,7 @@
     },
     {
       "content": "hello world",
-      "votes": 0,
+      "votes": 1,
       "id": "0r4-Tst"
     },
     {
@@ -42,17 +42,17 @@
     },
     {
       "content": "another test",
-      "votes": 0,
+      "votes": 1,
       "id": "R-lssfb"
     },
     {
       "content": "asdf",
-      "votes": 3,
+      "votes": 5,
       "id": "shcSEmx"
     },
     {
       "content": "another test again",
-      "votes": 10,
+      "votes": 12,
       "id": "Q4BIL9v"
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "content": "testing new notification timeout",
-      "votes": 1,
+      "votes": 2,
       "id": "tmBPl5M"
     },
     {
@@ -72,13 +72,23 @@
     },
     {
       "content": "testing form with connect",
-      "votes": 0,
+      "votes": 1,
       "id": "0K5_711"
     },
     {
       "content": "testing again",
       "votes": 0,
       "id": "Vn-B__4"
+    },
+    {
+      "content": "",
+      "votes": 1,
+      "id": "v8zm9ag"
+    },
+    {
+      "content": "new test",
+      "votes": 1,
+      "id": "9u3b5eA"
     }
   ]
 }
